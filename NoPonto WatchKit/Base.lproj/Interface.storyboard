@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller spacing="10" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoPonto_WatchKit" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" spacing="8" id="5to-8a-Cv4">
+                            <items>
+                                <timer alignment="center" id="TB1-9f-t2k">
+                                    <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <button width="1" alignment="left" title="Iniciar Timer" id="kCf-at-QbM">
+                                    <connections>
+                                        <action selector="timerPressed" destination="AgC-eL-Hgc" id="4KD-9t-ykF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="3vd-AO-Sc5">
+                            <items>
+                                <label alignment="center" text="Total: 0.1 Kg" id="wn3-qe-Pmx"/>
+                                <group width="1" alignment="center" spacing="20" id="csT-K8-13z">
+                                    <items>
+                                        <button alignment="center" backgroundImage="minus" id="QNx-Wd-hg8"/>
+                                        <button width="40" alignment="center" backgroundImage="plus" id="3Rd-Ac-Mo6"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="Ponto da carne" id="ISb-Lj-crq"/>
+                                <slider width="1" alignment="left" maximum="3" steps="3" id="1Ms-S4-cIe"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" layout="vertical" id="5ck-Gy-Ua9">
+                            <items>
+                                <label alignment="center" text="Total (Kg)" id="Nzy-Cl-CK1"/>
+                                <picker height="55" alignment="left" id="T5M-97-ADd"/>
+                                <label alignment="center" text="Ponto da Carne" id="xNC-2V-5DW"/>
+                                <picker height="60" alignment="left" style="sequence" id="O8K-c9-NiN"/>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" title="Imagens" id="bpF-kQ-pKb"/>
+                    </items>
+                    <connections>
+                        <outlet property="timer" destination="TB1-9f-t2k" id="75k-Ly-U2h"/>
+                        <outlet property="timerButton" destination="kCf-at-QbM" id="cbI-S9-cLx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="70" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" width="40" height="40"/>
+        <image name="plus" width="40" height="40"/>
+    </resources>
+</document>
