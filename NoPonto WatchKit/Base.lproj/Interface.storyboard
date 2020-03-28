@@ -30,27 +30,59 @@
                                 <label alignment="center" text="Total: 0.1 Kg" id="wn3-qe-Pmx"/>
                                 <group width="1" alignment="center" spacing="20" id="csT-K8-13z">
                                     <items>
-                                        <button alignment="center" backgroundImage="minus" id="QNx-Wd-hg8"/>
-                                        <button width="40" alignment="center" backgroundImage="plus" id="3Rd-Ac-Mo6"/>
+                                        <button alignment="center" backgroundImage="minus" id="QNx-Wd-hg8">
+                                            <connections>
+                                                <action selector="onMinusPressed" destination="AgC-eL-Hgc" id="cKc-Ex-tmc"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" alignment="center" backgroundImage="plus" id="3Rd-Ac-Mo6">
+                                            <connections>
+                                                <action selector="onPlusPressed" destination="AgC-eL-Hgc" id="sW5-vO-VC2"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <label alignment="center" text="Ponto da carne" id="ISb-Lj-crq"/>
-                                <slider width="1" alignment="left" maximum="3" steps="3" id="1Ms-S4-cIe"/>
+                                <slider width="1" alignment="left" maximum="3" steps="3" id="1Ms-S4-cIe">
+                                    <connections>
+                                        <action selector="onSliderTempChange:" destination="AgC-eL-Hgc" id="Tma-he-e0g"/>
+                                    </connections>
+                                </slider>
                             </items>
                         </group>
                         <group width="1" alignment="center" layout="vertical" id="5ck-Gy-Ua9">
                             <items>
                                 <label alignment="center" text="Total (Kg)" id="Nzy-Cl-CK1"/>
-                                <picker height="55" alignment="left" id="T5M-97-ADd"/>
+                                <picker height="55" alignment="left" focusStyle="stack" id="T5M-97-ADd">
+                                    <connections>
+                                        <action selector="onWeightChange:" destination="AgC-eL-Hgc" id="Uhu-zw-3mV"/>
+                                    </connections>
+                                </picker>
                                 <label alignment="center" text="Ponto da Carne" id="xNC-2V-5DW"/>
-                                <picker height="60" alignment="left" style="sequence" id="O8K-c9-NiN"/>
+                                <picker height="60" alignment="left" style="sequence" focusStyle="stack" id="O8K-c9-NiN">
+                                    <connections>
+                                        <action selector="onPickerTempChange:" destination="AgC-eL-Hgc" id="Uvy-WM-Dx9"/>
+                                    </connections>
+                                </picker>
                             </items>
                         </group>
-                        <switch width="1" alignment="left" title="Imagens" id="bpF-kQ-pKb"/>
+                        <switch width="1" alignment="left" title="Imagens" id="bpF-kQ-pKb">
+                            <connections>
+                                <action selector="onModeChange:" destination="AgC-eL-Hgc" id="vqM-RT-cut"/>
+                            </connections>
+                        </switch>
                     </items>
                     <connections>
+                        <outlet property="btTimer" destination="kCf-at-QbM" id="cbI-S9-cLx"/>
+                        <outlet property="imageGroup" destination="5ck-Gy-Ua9" id="CMG-vI-KwC"/>
+                        <outlet property="lbCook" destination="ISb-Lj-crq" id="63q-u5-anD"/>
+                        <outlet property="lbTemperature" destination="xNC-2V-5DW" id="bKk-94-5iM"/>
+                        <outlet property="lbWeight" destination="wn3-qe-Pmx" id="zpE-QY-fhn"/>
+                        <outlet property="slider" destination="1Ms-S4-cIe" id="2jW-xs-8EU"/>
+                        <outlet property="temperaturePicker" destination="O8K-c9-NiN" id="mK3-6t-H0c"/>
+                        <outlet property="textGroup" destination="3vd-AO-Sc5" id="8Rr-QV-f4F"/>
                         <outlet property="timer" destination="TB1-9f-t2k" id="75k-Ly-U2h"/>
-                        <outlet property="timerButton" destination="kCf-at-QbM" id="cbI-S9-cLx"/>
+                        <outlet property="weightPicker" destination="T5M-97-ADd" id="oyB-Jm-jDc"/>
                     </connections>
                 </controller>
             </objects>

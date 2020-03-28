@@ -20,6 +20,7 @@
 		310D5060242EB88100599DE6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D505F242EB88100599DE6 /* ExtensionDelegate.swift */; };
 		310D5062242EB88200599DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310D5061242EB88200599DE6 /* Assets.xcassets */; };
 		310D5066242EB88200599DE6 /* NoPonto WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 310D504C242EB88000599DE6 /* NoPonto WatchKit.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		310D5070242ED0F900599DE6 /* MeatTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D506F242ED0F900599DE6 /* MeatTemperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		310D505F242EB88100599DE6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		310D5061242EB88200599DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310D5063242EB88200599DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310D506F242ED0F900599DE6 /* MeatTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTemperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				310D505F242EB88100599DE6 /* ExtensionDelegate.swift */,
 				310D5061242EB88200599DE6 /* Assets.xcassets */,
 				310D5063242EB88200599DE6 /* Info.plist */,
+				310D506F242ED0F900599DE6 /* MeatTemperature.swift */,
 			);
 			path = "NoPonto WatchKit Extension";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				310D5060242EB88100599DE6 /* ExtensionDelegate.swift in Sources */,
 				310D505E242EB88100599DE6 /* InterfaceController.swift in Sources */,
+				310D5070242ED0F900599DE6 /* MeatTemperature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
